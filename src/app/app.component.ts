@@ -10,8 +10,10 @@ import { AppReactSelectComponent } from './components/app-react-select.component
   template: `
     <div>
       <h1>React in Angular Demo</h1>
-      <app-react-flow></app-react-flow>
+      <h2>React Select Demo</h2>
       <app-react-select></app-react-select>
+      <h2>React Flow Demo</h2>
+      <app-react-flow></app-react-flow>
     </div>
   `
 })
