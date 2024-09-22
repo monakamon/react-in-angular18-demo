@@ -17,7 +17,7 @@ const containerElementName = 'react_container_element_name';
   selector: 'app-react-flow',
   standalone: true,
   imports: [],
-  template: `<div #${containerElementName}></div>`
+  template: `<div class="size-full" #${containerElementName}></div>`
 })
 export class AppReactFlowComponent {
   public $nodes = input<Node[]>([], { alias: 'nodes' });
