@@ -5,7 +5,11 @@ import { RouterOutlet } from '@angular/router';
   selector: 'app-root',
   standalone: true,
   imports: [RouterOutlet],
-  template: `<h1 class="text-3xl font-bold underline">Hello world!</h1> `,
+  template: `
+    <div>
+      <h1>React in Angular Demo</h1>
+    </div>
+  `
 })
 export class AppComponent {
   title = 'react-in-angular18-demo';
