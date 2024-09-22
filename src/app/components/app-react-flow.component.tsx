@@ -20,9 +20,9 @@ const containerElementName = 'react_container_element_name';
   template: `<div #${containerElementName}></div>`
 })
 export class AppReactFlowComponent {
-  public $nodes = input<Node[]>([]);
+  public $nodes = input<Node[]>([], { alias: 'nodes' });
 
-  public $edges = input<Edge[]>([]);
+  public $edges = input<Edge[]>([], { alias: 'edges' });
 
   private root: Root | null = null;
 
