@@ -17,6 +17,4 @@ import { AppReactSelectComponent } from './components/app-react-select.component
     </div>
   `
 })
-export class AppComponent {
-  title = 'react-in-angular18-demo';
-}
+export class AppComponent {}
