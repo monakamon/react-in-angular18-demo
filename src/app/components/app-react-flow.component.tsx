@@ -6,10 +6,10 @@ import {
   input,
   viewChild
 } from '@angular/core';
-import ReactDOM, { Root } from 'react-dom/client';
+import { Edge, Node } from '@xyflow/react';
 import React from 'react';
+import ReactDOM, { Root } from 'react-dom/client';
 import { ReactFlowView } from './ReactFlowView';
-import { Node, Edge } from '@xyflow/react';
 
 const containerElementName = 'react_container_element_name';
 

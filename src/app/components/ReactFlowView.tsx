@@ -1,11 +1,10 @@
 import {
-  Node,
   Edge,
+  Node,
   ReactFlow,
   useEdgesState,
   useNodesState
 } from '@xyflow/react';
-import React from 'react';
 
 export const ReactFlowView = (param: { nodes: Node[]; edges: Edge[] }) => {
   const [nodes] = useNodesState(param.nodes);
