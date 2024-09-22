@@ -14,11 +14,20 @@ const initialEdges: Edge[] = [{ id: 'e1-2', source: '1', target: '2' }];
   standalone: true,
   imports: [RouterOutlet, AppReactFlowComponent],
   template: `
-    <div>
-      <h1>React in Angular Demo</h1>
-      <h2>React Flow Demo</h2>
-      <button (click)="goRight()">Go Right</button>
-      <div class="h-[400px] w-full">
+    <div class="flex h-screen flex-col">
+      <div>
+        <h1>React Flow in Angular Demo</h1>
+        <br />
+        <div class="flex flex-row justify-center gap-4">
+          <div>
+            <button (click)="goLeft()">Go Left</button>
+          </div>
+          <div>
+            <button (click)="goRight()">Go Right</button>
+          </div>
+        </div>
+      </div>
+      <div class="flex-1">
         <app-react-flow
           [nodes]="$passNode()"
           [edges]="$edges()"
@@ -44,7 +53,16 @@ export class AppComponent {
     this.$testNode.update((node) => {
       return {
         ...node,
-        position: { x: node.position.x + 30, y: node.position.y }
+        position: { x: node.position.x + 10, y: node.position.y }
+      };
+    });
+  }
+
+  public goLeft() {
+    this.$testNode.update((node) => {
+      return {
+        ...node,
+        position: { x: node.position.x - 10, y: node.position.y }
       };
     });
   }
