@@ -17,7 +17,9 @@ const initialEdges: Edge[] = [{ id: 'e1-2', source: '1', target: '2' }];
     <div>
       <h1>React in Angular Demo</h1>
       <h2>React Flow Demo</h2>
-      <app-react-flow [nodes]="$nodes()" [edges]="$edges()"></app-react-flow>
+      <div class="h-[400px] w-full">
+        <app-react-flow [nodes]="$nodes()" [edges]="$edges()"></app-react-flow>
+      </div>
     </div>
   `
 })
