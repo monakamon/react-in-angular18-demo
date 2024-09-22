@@ -43,6 +43,8 @@
     "@types/react-dom": "18.3.0",
     "angular-eslint": "18.3.1",
     "eslint": "^9.9.1",
+    "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-prettier": "5.2.1",
     "eslint-plugin-react-hooks": "4.6.2",
     "eslint-plugin-react-refresh": "0.4.12",
     "jasmine-core": "~5.2.0",
@@ -51,6 +53,7 @@
     "karma-coverage": "~2.2.0",
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
+    "prettier": "3.3.3",
     "typescript": "~5.5.2",
     "typescript-eslint": "8.2.0"
   }
