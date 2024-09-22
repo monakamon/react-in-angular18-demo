@@ -8,7 +8,7 @@ import reactRefresh from 'eslint-plugin-react-refresh'
 export default tseslint.config(
   { ignores: ['dist'] },
   {
-    files: ["**/*.ts"],
+    files: ["**/*.{ts,tsx}"],
     extends: [
       eslint.configs.recommended,
       ...tseslint.configs.recommended,
@@ -21,6 +21,11 @@ export default tseslint.config(
     },
     processor: angular.processInlineTemplates,
     rules: {
+      ...reactHooks.configs.recommended.rules,
+      'react-refresh/only-export-components': [
+        'warn',
+        { allowConstantExport: true },
+      ],
       "@angular-eslint/directive-selector": [
         "error",
         {
