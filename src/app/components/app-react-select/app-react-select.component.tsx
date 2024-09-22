@@ -1,13 +1,10 @@
-import { Component } from '@angular/core';
+import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-app-react-select',
+  selector: "app-app-react-select",
   standalone: true,
   imports: [],
-  template: `
-`,
-  styleUrl: './app-react-select.component.scss'
+  template: ``,
+  styleUrl: "./app-react-select.component.scss",
 })
-export class AppReactSelectComponent {
-
-}
+export class AppReactSelectComponent {}

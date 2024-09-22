@@ -5,6 +5,7 @@ import angular from "angular-eslint";
 import reactHooks from "eslint-plugin-react-hooks";
 import reactRefresh from "eslint-plugin-react-refresh";
 import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
+import tailwind from "eslint-plugin-tailwindcss";
 
 export default tseslint.config(
   { ignores: ["dist"] },
@@ -53,5 +54,6 @@ export default tseslint.config(
     ],
     rules: {},
   },
+  ...tailwind.configs["flat/recommended"],
   eslintPluginPrettierRecommended,
 );
