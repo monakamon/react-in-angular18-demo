@@ -22,6 +22,6 @@ const initialEdges: Edge[] = [{ id: 'e1-2', source: '1', target: '2' }];
   `
 })
 export class AppComponent {
-  public $nodes = signal(initialNodes);
-  public $edges = signal(initialEdges);
+  public $nodes = signal<Node[]>(initialNodes);
+  public $edges = signal<Edge[]>(initialEdges);
 }
