@@ -2,7 +2,9 @@ import {
   afterNextRender,
   afterRender,
   Component,
+  DestroyRef,
   ElementRef,
+  inject,
   input,
   viewChild
 } from '@angular/core';
@@ -52,4 +54,7 @@ export class AppReactFlowComponent {
       this.render();
     });
   }
+  private destroy = inject(DestroyRef).onDestroy(() => {
+    this.root?.unmount();
+  });
 }
