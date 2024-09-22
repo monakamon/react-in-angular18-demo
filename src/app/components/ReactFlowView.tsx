@@ -9,10 +9,19 @@ import {
   useEdgesState,
   useNodesState
 } from '@xyflow/react';
+import {useEffect} from "react";
 
 export const ReactFlowView = (param: { nodes: Node[]; edges: Edge[] }) => {
-  const [nodes] = useNodesState(param.nodes);
-  const [edges] = useEdgesState(param.edges);
+  const [nodes, setNodes] = useNodesState(param.nodes);
+  const [edges, setEdges] = useEdgesState(param.edges);
+
+  useEffect(() => {
+    setNodes(param.nodes);
+    setEdges(param.edges);
+  }, [
+    param.nodes,
+    param.edges,
+  ]);
 
   return (
     <ReactFlow fitView nodes={nodes} edges={edges}>
